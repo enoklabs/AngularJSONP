@@ -1,0 +1,1 @@
+<h3>Item Selected: {{detailID}}</h3>

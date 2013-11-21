@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="AppCore">
+	<head>
+		<title>Core</title>
+		
+		<!-- Mobile Friendly! -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+		<!-- Bootstrap CDN: Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+		<!-- Angular CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+		<!-- Angular Config -->
+		<script src="inc/js/config.js"></script>
+		
+		<!-- Controllers -->
+		<script src="inc/js/ctrl/core.js"></script>
+	</head>
+	<body>
+
+		<div ng-controller="CtrlCore" class="container">
+
+			<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">CORE</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-info">Filter</button>
+						</form>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#/">Home</a></li>
+							<li class=""><a href="#/login">Login</a></li>
+						</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+			
+			<h1 class="page-header">{{title}}</h1>
+
+
+			<div ng-view></div>
+			
+		</div>
+	</body>
+</html>
